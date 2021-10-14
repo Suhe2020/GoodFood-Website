@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --footer: #202020;
+    --secondary: #090909;
+}
+
+
+p{
+    font-weight: 300;
+    color: #111;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+}
+.flex-1{
+    flex: 1;
+}
+.headings{
+    font-weight: 300;
+    font-size: 2rem;
+}
+.headings span{
+    font-weight: 650;
+    font-size: 3rem;
+    color: hsl(49, 100%, 50%);
+}
+
+.btn{
+    border-radius: 4px;
+    margin-top: 1rem;
+    color: rgb(36, 34, 34);
+    font-size: 1rem;
+    background: hsla(49, 100%, 50%, 0.801);
+    /* background: #ff0157; */
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: .5s;
+    padding: .5rem 2rem;
+}
+
+.btn:hover{  
+    letter-spacing: 4px; 
+    background: hsl(49, 100%, 50%);
+}
+
+/* ----------------Header Section---------------- */
+header a{
+    text-decoration: none;
+    color: #fff;
+}
+header .navigation{
+    list-style: none;
+    display: flex;
+    position: relative;
+}
+header .navigation li{
+    padding-left: 2rem;
+}
+header .navigation li a:hover{
+    color: hsl(49, 100%, 50%);
+    /* font-weight: 300px; */
+}
+header .navigation li a{  font-weight: 300;  }
+header a > span{ 
+    color: hsl(49, 100%, 50%);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: .5s ease;
+}
+header .logo{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 700;
+}
+header.sticky{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.05);
+}
+
+header.sticky .logo ,header.sticky .navigation li a{
+    color: #111;
+}
+
+header.sticky .navigation li a:hover{
+    color: #ff0157;
+}
+/* ----------------End Header Section---------------- */
+
+
+
+/* ----------------Banner Section---------------- */
+.banner{
+    background:linear-gradient(rgba(27, 27, 29, 0.61),rgba(27, 27, 29, 0.61)), url(../images/slide-image-02.jpg);
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.banner .content{
+    max-width: 900px;
+    text-align: center;
+}
+.banner .content h2{
+    font-size: 5rem;
+    color: #fff;
+}
+.banner .content p{
+    font-size: 1rem;
+    color: #fff;
+}
+.banner .content .btn{
+    border-radius: 4px;
+    margin-top: 1rem;
+    color: rgb(36, 34, 34);
+    font-size: 1rem;
+    background: hsla(49, 100%, 50%, 0.801);
+    /* background: #ff0157; */
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: .5s;
+    padding: .5rem 2rem;
+}
+.banner .content .btn:hover{  
+    letter-spacing: 4px; 
+    background: hsl(49, 100%, 50%);
+}
+
+/* ----------------End Banner Section---------------- */
+
+
+
+/* ----------------About Section---------------- */
+section.about{
+    padding: 6.5rem;
+    /* padding-bottom: 0px; */
+    /* background: rgb(243, 243, 243); */
+}
+
+section.about .about-wrapper{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    /* text-align: center; */
+}
+
+section.about .about-wrapper .col50{
+    width: 48%;
+}
+
+section.about .about-wrapper .img img{
+    width: 100%;
+    min-height: 300px;
+}
+
+/* ----------------Menu Section---------------- */
+
+section.menu{
+    padding: 6.5rem;
+    padding-top: 4rem;
+}
+
+section.menu .title{
+    margin-bottom: 3rem;
+}
+
+section.menu .items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.menu .items .item-details{
+    width: 33%;
+    padding: .5rem;
+    margin: 1.5rem;
+    text-align: center;
+    box-shadow: 5px 5px 18px rgba(161, 161, 161, 0.39);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+section.menu .items .item-details img{
+    width: 300px;
+    height: 270px;
+    margin-bottom: .5rem;
+    object-fit: cover;
+}
+
+section.menu .items .item-details p{
+    margin-bottom: .5rem;
+    font-weight: 20rem;
+    font-size: 1.1rem;
+}
+
+/* ----------------End Menu Section---------------- */
+
+
+
+/* ----------------Expert Section---------------- */
+
+section.expert{
+    padding: 6.5rem;
+    /* background: rgb(247, 247, 247); */
+    background: url(../images/parallax-04.jpg);
+    background-attachment: fixed;
+}
+
+section.expert .title{
+    color: #fff;
+}
+
+section.expert p{
+    color: #fff;
+}
+
+section.expert .experts-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem;
+    margin-top: 4rem;
+
+}
+
+section.expert .experts-wrapper .ex-details img{
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    padding: .6rem;
+    background-color: rgba(105, 104, 104, 0.212);
+}
+
+section.expert .experts-wrapper .ex-details strong{
+    color: #fff;
+}
+
+section.expert .experts-wrapper .ex-details p{
+    font-size: .9rem;
+    font-weight: 200px;
+    color: rgb(215, 218, 42);
+}
+
+/* ----------------End Expert Section---------------- */
+
+
+
+
+
+/* ----------------Testimonials Section---------------- */
+
+section.testi{
+    padding: 6.5rem;
+}
+
+section.testi .title{
+    margin-bottom: 3.5rem;
+}
+
+section.testi .content-wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2rem;
+    position: relative;
+    margin-bottom: 3.5rem;
+    /* margin-right: -4rem; */
+}
+
+section.testi .content-wrapper .content-box{
+    width: 45%;
+    background: rgba(248, 250, 146, 0.712);
+    border-radius: 6px;
+    padding: 1rem;
+    position: relative;
+    margin-top: 2rem;
+    /* margin-right: 4rem; */
+    padding-top: 4rem;
+}
+
+section.testi .content-wrapper .content-box span{
+    color: rgb(122, 19, 62);
+}
+
+section.testi .content-wrapper .content-box img{
+    border-radius: 50%;
+    padding: .6rem;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    top: -50px;
+    left: 40%;
+}
+
+
+/* ----------------End Testimonials Section---------------- */
+
+
+
+
+/* ----------------Contact Section---------------- */
+
+section.contact{
+    background: url(../images/parallax-04.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    height: 100vh;
+    padding: 6.5rem;
+    padding-top: 4rem;
+}
+
+section.contact .content{
+    width: 50%;
+}
+
+section.contact .content .maps iframe{
+    /* margin-top: 3rem; */
+    margin-left: -10rem;
+    height: 70vh;
+}
+
+/* section.contact .title, section.contact .headings{
+    color: #fff;
+} */
+section.contact .form-wrapper{
+    background-color: rgba(255, 255, 255, 0.575);
+    display: inline-block;
+    padding: 3rem 1rem;
+    text-align: center;
+    border-radius: 4px;
+    /* margin-top: 2rem; */
+    margin-left: -13rem;
+    height: 70vh;
+}
+
+section.contact .form-wrapper form {
+    font-size: 1.5rem;
+    text-align: center;
+}
+section.contact .form-wrapper form input{
+    font-size: 1rem;
+    margin-top: 1rem;
+    padding: .5rem;
+    border-radius: 10px;
+    border: none;
+    border-bottom: 1px solid rgb(213, 213, 241);
+    background: rgba(93, 93, 107, 0.63);
+    outline: none;
+    color: #fff;
+    cursor:text;
+}
+
+section.contact .form-wrapper form button{
+    font-size: 1.1rem;
+    padding: .2rem 3rem;
+    margin-top: 2rem;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: hsla(49, 100%, 50%, 0.801);
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 300px;
+    color: cornsilk;
+}
+
+section.contact .form-wrapper form button:hover{
+    border: 1px solid rgb(110, 110, 110);
+    border-radius: 6px;
+    background: hsl(49, 100%, 50%);
+    letter-spacing: 2px;
+}
+/* ----------------End Contact Section---------------- */
+
+/* ----------------Footer Section---------------- */
+
+footer{
+    background: var(--footer);
+    /* height: 50vh; */
+    padding-top: 5rem;
+    justify-content: center;
+    flex-direction: column;
+}
+footer .footer-top{
+    width: 18vw;
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 4rem;
+}
+
+footer .footer-bottom{
+    text-align: center;
+    width: 100%;
+    padding-right: 0;
+}
+footer .icon a{
+    background-color: rgb(219, 217, 217);
+    border-radius: 50%;
+    color: #111;
+    transition: all .5s;
+}
+footer .icon a i{
+    font-size: 2rem;
+}
+footer .icon a:hover{
+    background-color: var(--secondary);
+    color: #fff;
+}
+
+footer .icon-fb a{
+    padding: 20px 15px;
+    padding-bottom: 5px;
+}
+
+footer .icon-twit a{
+    padding: 18px 10px;
+    padding-bottom: 5px;
+}
+footer .icon-inst a {
+    padding: 18px 10px;
+    padding-bottom: 5px;
+}
+footer .icons{
+     width: 100%; 
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+footer .other-infos a{
+    color: rgb(184, 184, 184);
+    text-decoration: none;
+    font-size: .8rem;
+    font-weight: 100px;
+}
+
+footer .other-infos a:hover{
+    color: #fff;
+}
+
+
+
+footer .footer-bottom{
+    background: var(--secondary);
+    padding: .8rem;
+    
+}
+footer .footer-bottom p{
+    color: rgb(170, 170, 170);
+}
+
+footer .footer-bottom .editor a{
+    text-decoration: none;
+    color: rgb(79, 79, 146);
+}
+
+footer .footer-top .dot {
+    height: 3px;
+    width: 3px;
+    margin-bottom: 2px;
+    background-color: rgb(204, 204, 204);
+    border-radius: 50%;
+    display: inline-block;
+  }
